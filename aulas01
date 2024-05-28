@@ -1,0 +1,17 @@
+Containers (Docker)
+  - Um container do Docker é um ambiente de runtime com todos os componentes necessários,
+    como código, dependências e bibliotecas, necessários para executar o código da aplicação
+    sem usar dependências da máquina host.
+  - A maioria das linguagens de programação possui algum tipo de sistema de tempo de execução
+    que fornece um ambiente no qual os programas são executados.
+
+Como o Docker funciona?
+  A tecnologia Docker usa o kernel do Linux e funcionalidades do kernel, como cGroups e namespaces, para segregar processos.
+Assim, eles podem ser executados de maneira independente. O objetivo dos containers é criar independência: a habilidade de executar
+diversos processos e apps separadamente para utilizar melhor a infraestrutura e, ao mesmo tempo, manter a segurança que você teria em sistemas separados.
+
+cGroups: Você pode usar control groups (cgroups) para estabelecer limites, priorizar ou controlar o acesso aos recursos de hardware para grupos de processos.
+Isto permite que você controle granularmente o uso de recursos de aplicações para utilizá-los de forma mais eficiente.
+
+namespaces: No contexto dos contêineres, isso significa que usuários e grupos podem ter privilégios para determinadas operações dentro do contêiner sem ter esses privilégios fora do contêiner.
+(Em outras palavras, o conjunto de capacidades de um processo para operações dentro de um namespace de usuário pode ser bem diferente de seu conjunto de capacidades no sistema host.)

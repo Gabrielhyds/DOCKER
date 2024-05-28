@@ -15,3 +15,22 @@ Isto permite que você controle granularmente o uso de recursos de aplicações 
 
 namespaces: No contexto dos contêineres, isso significa que usuários e grupos podem ter privilégios para determinadas operações dentro do contêiner sem ter esses privilégios fora do contêiner.
 (Em outras palavras, o conjunto de capacidades de um processo para operações dentro de um namespace de usuário pode ser bem diferente de seu conjunto de capacidades no sistema host.)
+
+-----------------------------
+
+docker pull DIST
+docker run -it DIST
+
+imagens pre configurados
+
+ex:
+
+docker pull python:3.12.3-slim-bullseye 
+docker run -it python:3.12.3-slim-bullseye
+
+
+
+--docker container ls 
+listar os containers que estão executando na maquina
+
+-- docker run -it IDDOPROCESSO bash 

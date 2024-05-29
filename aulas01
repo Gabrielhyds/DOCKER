@@ -34,3 +34,13 @@ docker run -it python:3.12.3-slim-bullseye
 listar os containers que estão executando na maquina
 
 -- docker run -it IDDOPROCESSO bash 
+
+-- docker image ls
+criar o arquivo "DOCKERFILE"
+  FROM ALPINE
+  RUN AOK ADD CMATRIX NEOVIM TMUX
+
+docker build -t alpine-mod . 
+
+docker image ls
+

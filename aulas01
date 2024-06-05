@@ -57,4 +57,6 @@ FROM alpine
 RUN apk add cmatrix tmux neovim nano
 COPY firebase firebase
 CMD cmatrix 
+-------------------------
 
+verificar docker hub, para subir imagens que criei 

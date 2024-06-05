@@ -50,3 +50,11 @@ docker image ls
 FROM alpine
 RUN apk add cmatrix tmux neovim nano
 COPY firebase firebase
+
+
+-------
+FROM alpine
+RUN apk add cmatrix tmux neovim nano
+COPY firebase firebase
+CMD cmatrix 
+

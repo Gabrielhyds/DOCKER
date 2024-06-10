@@ -105,3 +105,26 @@ docker volume prune
 
 # Remover Redes Não Utilizadas
 docker network prune
+
+# Faça login no Docker Hub
+docker login
+
+# Navegue até o diretório onde está o Dockerfile
+cd /caminho/para/seu/projeto
+
+# Construir a imagem Docker com uma tag específica
+docker build -t <seu-usuario-docker-hub>/nome-da-imagem:tag .
+
+# Verificar se a imagem foi construída corretamente
+docker images
+
+# Adicionar uma tag à imagem, se necessário
+docker tag <imagem-id> <seu-usuario-docker-hub>/nome-da-imagem:tag
+
+# Enviar a imagem para o Docker Hub
+docker push <seu-usuario-docker-hub>/nome-da-imagem:tag
+
+# Verificar no Docker Hub se a imagem foi enviada corretamente
+# (Pode ser feito no site do Docker Hub)
+
+
